@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   pathPrefix: "/methodology-lb-4-glossary",
   siteMetadata: {
     title: `Голосарій`,
-    siteUrl: "https://TNUStasivBogdan2023.github.io"
+    siteUrl: "https://tnustasivbogdan2023.github.io"
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
