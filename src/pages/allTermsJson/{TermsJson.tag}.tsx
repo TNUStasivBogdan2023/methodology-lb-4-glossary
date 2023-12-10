@@ -10,7 +10,7 @@ export default function TermPage({ data }: PageProps<Queries.TermPageQuery>) {
   return (
     <div>
       <Header />
-      <Wrapper className="mt-12">
+      <Wrapper className="mt-12 pb-8">
         <h1 className="font-bold text-3xl mb-4"> {term?.title} </h1>
 
         {term?.image && (
