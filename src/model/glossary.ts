@@ -1,4 +1,5 @@
-import { ReadonlyRecord as RR, ReadonlyArray as RA, pipe } from "effect";
+import { ReadonlyRecord as RR, ReadonlyArray as RA, pipe, identity } from "effect";
+import groupBy from "lodash/groupBy"
 
 export module Glossary {
   export const alphabet: string[] = [
@@ -8,9 +9,8 @@ export module Glossary {
     'Ь', 'Ю', 'Я'
   ];
 
-  export const make = (data: Pick<Queries.TermsJson, "title" | "definition">[]) => pipe(
-    data,
-    RA.groupBy(term => term?.title?.toUpperCase().at(0) ?? "")
-  );
+  export const make = (data: Pick<Queries.TermsJson, "title" | "definition">[]) => {
+    return groupBy(data, term => term.title?.toUpperCase().at(0) ?? "")
+  }
 }
 
