@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkglossary=self.webpackChunkglossary||[]).push([[691],{7200:function(e,l,s){s.r(l);var a=s(7294),t=s(9377),n=s(9845);l.default=e=>{let{data:l}=e;const s=l.allTermsJson.edges;return console.warn(s),a.createElement("div",null,a.createElement(t.h,null),a.createElement(n.i,{className:"mt-8"}))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-d187c2f551e5c972f57d.js.map
